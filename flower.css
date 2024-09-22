@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Pinyon+Script&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  background: #131b21;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  /* Coloca los elementos uno sobre el otro */
+  justify-content: center;
+  /* Centra verticalmente */
+  align-items: center;
+  /* Centra horizontalmente */
+}
+
+svg#flower-frame {
+  height: 90vh;
+  width: 100%;
+}
+
+#Footer_group_1_,
+[id^="PinkFlowerGroup"],
+[id^="BaseGroup"] path,
+[id^="LeafGroup"] path,
+path[id^="Stroke"],
+g[id^="BudGroup"] g[id^="BudGroup"] g[id^="Bud"],
+#Bud8_1_,
+#Bud10_1_,
+#Bud23_1_,
+#Bud26_1_,
+[id^="Dots"],
+[id^="Flourish"] {
+  visibility: hidden;
+}
+
+.content {
+  margin-top: -50vh;
+  background-color: transparent;
+}
+
+.title {
+  color: yellow;
+  text-align: center;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 3.5vw;
+  /* Cambiado a vw para adaptar a la pantalla */
+  background-color: transparent;
+  margin: 0;
+}
+
+.description {
+  color: yellow;
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.8vw;
+  /* Cambiado a vw para adaptar a la pantalla */
+  background-color: transparent;
+  margin: 0;
+}
+
+.boton {
+  font-size: 1.5em;
+  /* Cambiado a una unidad relativa más adecuada */
+  padding: 10px 15px;
+  /* Ampliado el padding para dispositivos más pequeños */
+  margin: 20px auto;
+  /* Centrado el botón y ajustado margen */
+  border: none;
+  background-color: #ff3366;
+  color: white;
+  cursor: pointer;
+  border-radius: 50px;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.4);
+  display: block;
+  /* Hace que el botón se centre automáticamente */
+  width: 50%;
+  /* Ajusta el ancho del botón */
+}
+
+/* Media Queries para pantallas más pequeñas */
+@media (max-width: 768px) {
+  .title {
+    font-size: 6vw;
+    /* Ajusta el tamaño del título para pantallas más pequeñas */
+  }
+
+  .description {
+    font-size: 3vw;
+    /* Ajusta el tamaño de la descripción */
+  }
+
+  .boton {
+    font-size: 1em;
+    width: 80%;
+    /* Hace el botón más ancho en pantallas pequeñas */
+  }
+}
+
+@media (max-width: 480px) {
+  .title {
+    font-size: 7vw;
+    /* Más pequeño aún en pantallas móviles */
+  }
+
+  .description {
+    font-size: 5vw;
+    /* Ajuste adicional para móviles */
+  }
+
+  .boton {
+    font-size: 0.8em;
+    /* Tamaño del texto ajustado */
+    width: 70%;
+    /* Botón casi a pantalla completa */
+  }
+}
